@@ -1,0 +1,90 @@
+\section{Parameters estimation}
+\subsection{Maximum likelihood fit}
+
+A maximum likelihood fit is used to extract the decay parameters, which are only 
+related to the helicity angles. For each channel, the probability distribution 
+function (PDF) with eight unknow parameters $\Omega$ can be defined in nine dimensions
+helicity angles spanned by $\xi$:
+\begin{equation}
+	\mathcal{P}(\xi;\Omega) = \mathcal{W}(\xi;\Omega)\varepsilon(\xi)/\mathcal{N}(\Omega)
+\end{equation}
+The full likelihood function can be written as 
+\begin{equation}
+	\mathcal{S} = -\sum_{i = 1}^N\ln \mathcal{W}(\xi_i;\Omega) + 
+	\sum_j \sum_i^{N_j^{\rm bkg}}\ln \mathcal{W}(\xi_i;\Omega)
+	+ N^{\rm signal} \times \ln \mathcal{N}(\Omega) - \sum_i^N \ln \varepsilon(\xi_i)
+\end{equation}
+
+\begin{itemize}
+	\item Helicity angles and parameters
+
+		For neutron channel, the helicity angles $\xi = (\theta_{\Xi}, \theta_{\Lambda}, \phi_{\Lambda}, 
+		\theta_{\bar{\Lambda}}, \phi_{\bar{\Lambda}}, \theta_{n}, \phi_{n}, 
+		\theta_{\bar{p}}, \phi_{\bar{p}})$ 
+		and the parameters $\Omega = (\alpha_{J/\psi}, \Delta \Phi, \alpha_{\Xi^-},
+		\phi_{\Xi^-}, \alpha_{\bar{\Xi}^+}, \phi_{\bar{\Xi}^+}, \alpha_{\Lambda}^0,
+		\alpha_{\bar{\Lambda}}^+)$;
+
+		For anti-neutron channel, the helicity angles 
+		$\xi = (\theta_{\Xi}, \theta_{\Lambda}, \phi_{\Lambda}, 
+		\theta_{\bar{\Lambda}}, \phi_{\bar{\Lambda}}, \theta_{p}, \phi_{p}, 
+		\theta_{\bar{n}}, \phi_{\bar{n}})$ 
+		and the parameters $\Omega = (\alpha_{J/\psi}, \Delta \Phi, \alpha_{\Xi^-},
+		\phi_{\Xi^-}, \alpha_{\bar{\Xi}^+}, \phi_{\bar{\Xi}^+}, \alpha_{\Lambda}^-,
+		\alpha_{\bar{\Lambda}}^0)$.
+	\item $-\sum_{i = 1}^N\ln \mathcal{W}(\xi_i;\Omega)$
+
+		The first item is the sum of all events (total $N$ events) which survive the 
+		final selection criteria in experiment data. $\mathcal{W}(\xi_i;\Omega)$ is 
+		the amplitude value for $i$-th events. In practice, we will try to find 
+		minimum value of a function. So, there is a negative sign in the PDF.
+	\item $\sum_j \sum_i^{N_j^{\rm bkg}}\ln \mathcal{W}(\xi_i;\Omega)$
+
+		The second item stands for the background subtracting. There are total
+		$j = 4$ types of background: mis-combination background, charged decay
+		channel, $J/\psi \to \gamma \eta_c$ and non-peaking background. $N_j^{\rm bkg}$
+		is the estimated number of events for $j$-th type of background.
+
+	\item $N^{\rm signal} \times \ln \mathcal{N}(\Omega)$
+
+		$\mathcal{N}(\Omega)$ is the normalization factor given by:
+		\begin{equation}
+			\mathcal{N}(\Omega) = \int \mathcal{W}(\xi;\Omega)\varepsilon(\xi) {\rm d} \xi 
+		\end{equation}
+		In practice, there are two method to calculate the normalization factor,
+		using PHSP MC or mDIY MC, propagated through the detector and reconstructed as
+		data. The normalization factor calculated with PHSP MC is approximately given 
+		as:
+		\begin{equation}
+			\mathcal{N}(\Omega) = \frac{1}{M} \sum_{j=1}^M \mathcal{W}(\xi_j;\Omega)	
+		\end{equation}
+		By using mDIY MC, the normalization factor is given as:
+		\begin{equation}
+			\mathcal{N}(\Omega) = \frac{1}{M} \sum_{j=1}^M \frac{\mathcal{W}(\xi_j;\Omega)	}{\mathcal{W}(\xi_j;\Omega_0)}
+		\end{equation}
+		where $M$ is the total number of events of the corresponding MC sample that  
+		survived all the event selection criteria as data and with additional photon 
+		matched angle requirement..
+
+		{\bf Comments on normalization factor}
+
+	\item $- \sum_i^N \ln \varepsilon(\xi_i)$
+
+	 	The last item is the efficiencies which is not dependent on the parameters
+		in $\Omega$ and will only affects the overall log-likelihood normalization.
+		Therefore, this item is a constent and can be dropped.
+
+
+\end{itemize}
+
+\subsection{Input-Output check}
+
+An input-output check is performed to guarantee the correctness of fitting procedure. 
+30 sets of mDIY MC is used to do the input-output check and the number of events of
+each set is equal to the signal yield from data. The backgrounds are also considered
+by including the background events from the inclusive and exclusive MC and then using 
+the same method as used in data to subtract the background. Table~\ref{} lists the
+input-output value. The distributions of the fitting results and the pull distribution
+are shown in Fig.~\ref{}. It is clear to see that the output values are consistent with
+the input.
+

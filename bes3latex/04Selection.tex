@@ -1,0 +1,197 @@
+\section{Event Selection}
+\label{sec:eventselection}
+\subsection{Quick review}
+
+\subsection{Track level selection}
+\begin{itemize}
+\item {\bf Good charged track}
+\begin{itemize}
+\item Charged tracks detected in the MDC are required to be within a polar angle ($\theta$) range of $|\rm{cos\theta}|<0.93$, where $\theta$ is defined with respect to the $z$-axis,
+which is the symmetry axis of the MDC.
+
+\item Due to the long life time of $\Xi$ and $\Lambda$, for charged tracks in final states,
+	the distance of closest approach to the interaction point (IP)
+must be less than 30\,cm
+along the $z$-axis, $|V_{z}|$,
+and less than 10\,cm
+in the transverse plane, $|V_{xy}|$.
+\item The total number of charged tracks should be equal to 4. This requirement can help us 
+	reducing the background caused by charged channel
+		$J/\psi\to \Xi^- \bar{\Xi}^+ \to \Lambda(\to p\pi^-)\pi^- \bar{\Lambda}(\to \bar{p} \pi^+) \pi^+$.
+\end{itemize}
+\item {\bf Good photon selection}
+\begin{itemize}
+  \item Photon candidates are identified using showers in the EMC.  The deposited energy of each shower must be more than 25~MeV in the barrel region ($|\cos \theta|< 0.80$) and more than 50~MeV in the end cap region ($0.86 <|\cos \theta|< 0.92$).  
+
+\item  
+To exclude showers that originate from
+charged tracks,
+the angle subtended by the EMC shower and the position of the closest charged track at the EMC
+must be greater than 20 degrees as measured from the IP. 
+%[ORIGINAL:
+%To exclude showers that originate from
+%charged tracks, the angle between the position of each shower in the EMC and the closest extrapolated charged track must be greater than 10 degrees.]
+
+\item  To suppress electronic noise and showers unrelated to the event, the difference between the EMC time and the event start time is required to be within 
+[0, 700]\,ns.
+
+\item 
+	There is a additional requirement for neutron channel. To veto the shower deposited by 
+	neutrons in the EMC, the openning angle between the direction of $\Lambda$ and the 
+		direction of a photon shower must be greater than 15 degrees. However, 
+		anti-neutron channel doesn't need such requirement. It will be discussed in the following 
+		sub-section.
+\end{itemize}
+
+\item {\bf Particle identification}
+	\begin{itemize}
+		\item  One proton/anti-proton, two $\pi^-$/$\pi^+$, and one $\pi^+$/$\pi^-$ must be identified 
+			for neutron/anti-neutron channel. According to the true information as shown in Fig.~\ref{fig:trufmomxixipm},~\ref{fig:trufmomxixipp},
+			the proton and pion candidates must have momenta
+			$p_{pr} > 0.32 \GeV/c$ and $p_{\pi} < 0.30 \GeV/c$, respectively.
+			There is no overlap between proton and pion momenta. The comparison
+			of reconstruction momenta between data and MC are shown in
+			Fig.~\ref{}~\ref{}.
+			The alternative would be to use particle identification methods. 
+			As discussed in~\cite{}, this method is not considered viable.
+	\end{itemize}
+
+\end{itemize}
+\subsection{Event level selection}
+For both neutron channel and anti-neutron channel, there is two legs, a charged leg 
+$\Xi^- \to \Lambda(\to p\pi^-) \pi^-$ or $c.c.$ and a neutral leg
+$\bar{\Xi}^+ \to \bar{\Lambda} (\to \bar{n} \pi^0)\pi^+$ or $c.c.$.
+A so called single tag double tag method are used to reconstruct the decay process 
+from the available pool of charged tracks and photon showers. Single tag is used to 
+reconstruct the charged leg and double tag is used to reconstruct the neutral lag.
+\begin{itemize}
+	\item {\bf Single tag}
+		\begin{itemize}
+			\item The $\Lambda$ candidate is reconstructed from proton 
+				and charged pion and required to pass a primary 
+				vertex fit. 
+			\item The $\Xi$ candidate reconstructed from the $\Lambda$
+				and the remaining pion is required to pass a primary
+				and a secondary vertex fit. The secondary vertex fit
+				for the $\Lambda$ is set at the decay point of $\Xi$, 
+				for the formed $\Xi$ is set at the  interaction point.
+			\item The charged combination is selected to minimize 
+				$\Delta m_{\Xi \Lambda} = ((m_{p\pi\pi} - m_{\Xi})^2
+				+ (m_{p\pi} - m_{\Lambda})^2)^{1/2}$, where $m_{p\pi\pi}$
+				and $m_{p\pi}$ denote the reconstructed invariant masses
+				of the proton-pion-pion and proton-pion systems, respectively
+				and $m_{\Xi}$, $m_{\Lambda}$ are the PDG tabulated masses of 
+				$\Xi$ and $\Lambda$, respectively.
+		\end{itemize}
+	\item {\bf Double tag}
+		\begin{itemize}
+			\item The $\pi^0$ candidate is reconstructed from a pair of photons
+				which survive the good photon selections. An unconstrained 
+				mass $M(\gamma\gamma)$ is calculated from energies and momenta
+				of two photon pairs and it must be within $M(\pi^0) - 0.06 < 
+				M(\gamma\gamma) < M(\pi^0) + 0.04 $
+				. A kinematic fit of the two photons
+				is also performed with a constraint $M(\gamma\gamma) = M(\pi^0)$.
+				The $chi^2$ from kinematic fit must be less than 25.
+				And the resulting energies and momenta of $\pi^0$ is saved for 
+				further analyses.
+			\item A kinematic fit with the following constraints is performed to suppress
+				background and improve the resolution especially for final states in
+				neutral leg,
+
+				\begin{subequations}
+					\begin{align}
+						P_{J/\psi} = P_{\Xi^{\pm}} + P_{\pi^{\mp} + P_{\gamma 1}}
+						+ P_{\gamma 2} + P_{n/\bar{n}}, \\
+						M(\pi^0) = M(\gamma_1 \gamma_2),\\ 
+						M(\Lambda/\bar{\Lambda}) = M(\gamma_1 \gamma_2 n/\bar{n}),
+					\end{align}
+				\end{subequations}
+				where $P$ stands for the four-momenta, $M$ stands for the invariant mass,
+				$\gamma_1$ and $\gamma_2$ is the photon from $\pi^0$ in energy descending order.
+				The $\chi^2$ from the kinematic fit is required to be less than 200.
+		\end{itemize}
+	\item {\bf An additional requirement for neutron channel}
+		\begin{itemize}
+			\item As mentioned before, the shape of neutron shower is very similar with 
+				one of a photon shower. The neutron shower has a possibility to pass 
+				the good photon selections and form a $\pi^0$ candidate with a small
+				energy photon. As shown in Fig.~\ref{fig:angleLNT}, the true opening 
+				angle between $\Lambda$ and $n$ (or, $\bar{\Lambda}$ and $\bar{n}$)
+				is less then 0.25~rad. Figure~\ref{fig:angleLN} show the open angle
+				between $\Lambda$ and photons after reconstruction. For the neutron 
+				channel, the peaks at 0.15~rad is caused by neutron shower being mistaken
+				for photon shower. There is no such problem for anti-neutron 
+				channel. In order to void the mistaken of neutron showers, an angle 
+				cut for $\Lambda$ and the EMC showers is required. 
+				When we select photons from the EMC shower queues,
+				with four momenta of $\Lambda$ which is obtained by the energy-momentum 
+				conservation in the recoiling system of $\bar{\Xi}$ and $\pi^-$, the 
+				open angle between $\Lambda$ and the EMC showers can be calculated and
+				will be required to be less than $15^\circ$.
+		\end{itemize}
+
+	\begin{figure*}[hp]
+		\centering
+		\mbox
+		{
+			\begin{overpic}[width=0.8\textwidth]{Figure/angleLNT.eps}
+			\end{overpic}
+		}
+		\caption{}
+		\label{fig:angleLNT}
+	\end{figure*}
+
+	\begin{figure*}[hp]
+		\centering
+		\mbox
+		{
+			\begin{overpic}[width=0.8\textwidth]{Figure/angleLN.eps}
+			\end{overpic}
+		}
+		\caption{}
+		\label{fig:angleLN}
+	\end{figure*}
+
+
+
+
+
+\end{itemize}
+
+\subsection{Further selection}
+After the initial selection criteria one is left with a sample that needs to 
+be polished further. In order to reduce background contributions and reduce
+data-Monte Carlo discrepancies, the following selection criteria have been 
+applied. 
+\begin{itemize}
+	\item Further selection criteria
+		\begin{itemize}
+			\item requiring that the reconstructed decay lengths
+				of all final state hyperons are greater than
+				0;
+			\item requiring that the cosine of the angle of the 
+				reconstructed $\Xi^-$ in the center-of-mass
+				frame, $\cos\theta_{\Xi^-, {\rm CM}}$, 
+				fulfills the requirement $|\cos\theta_{\Xi^-, {\rm CM}}| < 0.84$.
+			\item setting a mass window selection criteria for the
+				$\Lambda$ candidates. For the neutron channel,
+				we require that $|M(\bar{p}\pi^+)| < 0.0115~\GeV/c^2$, 
+				for the anti-neutron channel,
+				$|M(p\pi^-)| < 0.0115~\GeV/c^2$.
+			\item setting a mass window selection criteria for the 
+				$\Xi^-$ and $\bar{\Xi}^+$ candidates. For the 
+				neutron channel, we require that
+				$|M(n\gamma\gamma\pi^-)| < 0.011~\GeV/c^2$,
+				$|M(\bar{p}\pi^+\pi^+)| < 0.011~\GeV/c^2$;
+				for the anti-neutron channel,
+				$|M(\bar{n}\gamma\gamma\pi^+)| < 0.011~\GeV/c^2$,
+				$|M(p\pi^-\pi^-)| < 0.011~\GeV/c^2$.
+		\end{itemize}
+\end{itemize}
+
+
+
+
+
+

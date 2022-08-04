@@ -1,0 +1,160 @@
+\section{Background estimation}
+\label{sec:background}
+\subsection{Inclusive MC}
+The potential backgrounds from other decay processes that might be present
+in the data are studied by analyzing the official inclusive MC sample.
+After final events selection, a topology method is used to classify the 
+survived events. Table.~\ref{tab:topopm2018}~\ref{tab:topopp2018} list the 
+dominantly contributing processes
+for two decay channels and four data sets. Three variables $M(\Xi^-)$,
+$M(\bar{\Xi}^+)$ and $M(n/\bar{n})$ are used to separate the signal 
+and background. If a background channel has very similar shapes in these 
+three mass spectra with the signal shapes, it is called a peaking background.
+They can be categorized into three groups: charged decay channel, 
+peaking background, and non-peaking background.
+\input{Table/topoPM2019}
+
+The charged decay channel has been well studied. The mDIY MC samples for 
+charged decay channel are generated according to \cite{}. The mass spectra
+of $M(\Xi^-)$, $M(\bar{\Xi}^+)$ and $M(n/\bar{n})$ for this channel are 
+ploted in Fig.~\ref{fig:bg1mass}. Figure~\ref{fig:bg1MvM} shows the 2D 
+mass distribution $M(\Xi^-)$ v.s. $M(\bar{\Xi}^+)$.
+This background will be subtracted in the maximum 
+log likelihood fit. 
+
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=1.0\textwidth]{Figure/bg1mass.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:bg1mass}
+\end{figure*}
+
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=0.8\textwidth]{Figure/bg1MvM.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:bg1MvM}
+\end{figure*}
+
+
+The exclusive decay $J/\psi \to \eta_c\gamma \to\Xi^- \bar{\Xi}^+\gamma$
+is a peaking background. According to PDG, the related  branch fractions 
+are $\mathcal{B}(J/\psi \to \eta_c\gamma) = (17\pm0.4)\%$ and
+$\mathcal{B}(\eta_c \to \Xi^- \bar{\Xi}^+) = (9.0\pm2.6)\times10^4$.
+The process $e^-e^+ \to J/\psi \to \eta_c\gamma$ has a angular distribution
+$1+\cos^2\theta$. The spin density matrix for $\eta_c \to \Xi^- \bar{\Xi}^+$
+is diag(1, -1, 1, 1). The decay matrix for the hyperons have been discussed 
+in Sec.~\ref{}. A mDIY MC sample with 30 number of events are 
+generated to estimate the background in the data.
+
+For the phase space decay $J/\psi \to \pi^+\pi^- \Lambda \bar{\Lambda}$
+and the rest decay channels, figure~\ref{fig:bg3mass}~\ref{fig:bg3MvM} 
+show the distributions
+of variables $M(\Xi^-)$, $M(\bar{\Xi}^+)$ and $M(n/\bar{n})$. Since the 
+shapes for $M(\Xi^-)$ and $M(\bar{\Xi}^+)$ are continuous and flat, a 
+sideband method will be used to estimate this background.
+
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=1.0\textwidth]{Figure/bg3mass.eps}
+		\end{overpic}
+	}
+	\mbox
+	{
+		\begin{overpic}[width=1.0\textwidth]{Figure/bg4mass.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:bg3mass}
+\end{figure*}
+
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=0.45\textwidth]{Figure/bg3MvM.eps}
+		\end{overpic}
+	}
+	\mbox
+	{
+		\begin{overpic}[width=0.45\textwidth]{Figure/bg4MvM.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:bg3MvM}
+\end{figure*}
+
+\subsection{Miscombination background}
+
+When the $\pi^0$ are reconstructed from the EMC photon shower queues, there 
+is a probability that one or both of the photon showers are noise or fake
+photons. That event might survive the final event selection. Althought it is a 
+real signal event, the miscombination of photon will lead to a false four
+momenta of $\pi^0$ and a wrong angular reconstruction of neutron or anti-neutron.
+A photon matched angle is used to judge if the reconstructed photon is
+correct or not, which is defined as following: there are two photons in the MC 
+truth, $\gamma^1_{\rm true}$ and $\gamma^2_{\rm true}$, and two reconstructed
+photons $\gamma^1_{\rm rec}$ and $\gamma^2_{\rm rec}$. If $\theta(\gamma^1_{\rm true},
+\gamma^1_{\rm rec}) + \theta( \gamma^2_{\rm true} , \gamma^2_{\rm rec}) < 
+\theta(\gamma^1_{\rm true}, \gamma^2_{\rm rec}) + \theta( \gamma^2_{\rm true} , 
+\gamma^1_{\rm rec})$, then, the matched angle for photon 1 and photon 2 is 
+$\theta^1_{\rm match} = \theta(\gamma^1_{\rm true}, \gamma^1_{\rm rec})$ and
+$\theta^2_{\rm match} = \theta(\gamma^2_{\rm true}, \gamma^2_{\rm rec})$, 
+respectively; else 
+$\theta^1_{\rm match} = \theta(\gamma^1_{\rm true}, \gamma^2_{\rm rec})$,
+$\theta^2_{\rm match} = \theta(\gamma^2_{\rm true}, \gamma^1_{\rm rec})$.
+Figure~\ref{fig:gamangle} show the distributions of the photon matched angle.
+It's obvious that the matched angle for some photons are too large to be 
+correct. At the stage of MC study, requirements on photon matched angle
+$\theta^1_{\rm match} < 0.3$~rad and $\theta^2_{\rm match} < 0.3$~rad can
+be applied to separate the signal and mis-combination background. As shown
+in Fig.~\ref{fig:recmass}, the shape of mis-combination background are relatively 
+flat compared to one of the signal. It can be used as a variable to distinguish
+between signal and background. It is also expectable that the shapes of 
+signal and background are very similar for $M(\Xi^-)$, $M(\bar{\Xi}^+)$
+and $M(\Lambda)$.
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=0.9\textwidth]{Figure/gamangle.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:gamangle}
+\end{figure*}
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=0.9\textwidth]{Figure/recmass.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:recmass}
+\end{figure*}
+\begin{figure*}[hp]
+	\centering
+	\mbox
+	{
+		\begin{overpic}[width=0.9\textwidth]{Figure/baryonangle.eps}
+		\end{overpic}
+	}
+	\caption{}
+	\label{fig:baryonangle}
+\end{figure*}
+
+Figure~\ref{fig:baryonangle} show that the mis-combination background will 
+lead to a worse resolution of the reconstruction of neutron/anti-neutron 
+position. A large mDIY MC sample will be used to estimate the mis-combination
+background.

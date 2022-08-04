@@ -1,0 +1,34 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Previous results}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Data Sample}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{BESIII Detector}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Data sample}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Monte Carlo Simulation}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Inclusive Monte Carlo}{subsection.2.3}% 7
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Signal Monte Carlo}{subsection.2.3}% 8
+\BOOKMARK [1][-]{section.3}{Event Selection}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Quick review}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Track level selection}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Event level selection}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Further selection}{section.3}% 13
+\BOOKMARK [1][-]{section.4}{Background estimation}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Inclusive MC}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Miscombination background}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{Parameters estimation}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Maximum likelihood fit}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Input-Output check}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Real data}{}% 20
+\BOOKMARK [2][-]{subsection.6.1}{Blind analysis}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.2}{Signal yield}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.3}{Variables comparison}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.4}{Transverse momentum and polar angle}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.5}{Polarization and entanglement}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.6}{Data fit results}{section.6}% 26
+\BOOKMARK [1][-]{section.7}{Systematic uncertainty}{}% 27
+\BOOKMARK [1][-]{section.8}{Summary}{}% 28
+\BOOKMARK [0][-]{part*.27}{Appendices}{}% 29
+\BOOKMARK [1][-]{appendix.A}{True information}{part*.27}% 30
+\BOOKMARK [1][-]{appendix.B}{Branch fraction check}{part*.27}% 31
+\BOOKMARK [1][-]{appendix.C}{Comparison between data and MC}{part*.27}% 32
+\BOOKMARK [2][-]{subsection.C.1}{Variables comparison}{appendix.C}% 33
+\BOOKMARK [2][-]{subsection.C.2}{Transverse momentum and polar angle}{appendix.C}% 34

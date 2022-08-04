@@ -1,0 +1,36 @@
+\begin{figure}
+	\unitlength = 1mm
+	\centering
+	\begin{fmffile}{xixi}
+		\begin{fmfgraph*}(120,75)
+			\fmfleft{i1,i2}
+			\fmfright{o1,o2,o3,o4,o5,o6}
+			\fmflabel{$e^-$}{i1}
+			\fmflabel{$e^+$}{i2}
+			\fmflabel{$n(p^+)$}{o6}
+			\fmflabel{$\bar{p}^-(\bar{n})$}{o1}
+			\fmflabel{$\pi^0(\pi^-)$}{o5}
+			\fmflabel{$\pi^-$}{o4}
+			\fmflabel{$\pi^+$}{o3}
+			\fmflabel{$\pi^+(\pi^0)$}{o2}
+			%\fmflabel{$i\sqrt{\alpha}$}{v1}
+			%\fmflabel{$i\sqrt{\alpha}$}{v2}
+			\fmfblob{.08w}{v2}
+			\fmf{fermion}{i1,v1,i2}
+			\fmf{double_arrow}{o1,v5}
+			\fmf{double_arrow}{v6,o6}
+			\fmf{vanilla}{v5,o2}
+			\fmf{vanilla}{v3,o3}
+			\fmf{vanilla}{v4,o4}
+			\fmf{vanilla}{v6,o5}
+			\fmf{double_arrow, label=$\Lambda$}{v4,v6}
+			\fmf{double_arrow, label=$\Xi^-$}{v2,v4}
+			\fmf{double_arrow, label=$\bar{\Xi}^+$}{v3,v2}
+			\fmf{double_arrow, label=$\bar{\Lambda}$}{v5,v3}
+			\fmf{photon,label=$\gamma$}{v1,v7}
+			\fmf{dbl_dashes,label=$J/\psi$}{v7,v2}
+		\end{fmfgraph*}
+	\end{fmffile}
+	\caption{Using \texttt{feynmp}}
+	\label{fig:xixidig}
+\end{figure}

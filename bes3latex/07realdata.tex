@@ -1,0 +1,158 @@
+\section{Real data}
+\subsection{Blind analysis}
+In order to reduce the experimenter's bias, this measurement
+adopts a blind analysis technique~\cite{Roodman:2003rw}. As discussed in 
+Sec.~\ref{sec:mcsimulation} and Sec.~\ref{sec:background},
+the signal MC and background MC are generated according to the
+knowledge that we have learned from previous experiments. The events
+selections in Sec.~\ref{sec:eventselection} are optimized according 
+to the MC simulation without looking at the data. The total measurement
+procedure is fixed on a sub-sample of the data, 2009 + 2012 + 1/3 of 2018 
+and 2019 data samples.
+The systematic impact of the defferences between MC and data are
+studied by applying a hidden answer method. Once all the strategies
+are sattled, it will be performed to the full data sets to open the
+hidden box. The follows are the comparisons of distribution  
+between data and MC which show the agreement of them.
+
+\subsection{Signal yield}
+According to the discussion in Sec.~\ref{sec:background}, the invariant mass
+of neutron/anti-neutron is chosen as a variable to obtain the signal yield,
+with an unbinned maximum likelihood fit. The signal shape is modeled as the
+likelihood function by a tool {\sc RooKeysPdf} in {\sc RooFit} to describe  
+the signal. As shown in Fig.~\ref{fig:bkg2012xixipm}, the 
+shape of the miscombination background drops rapidly from 0.96 to 0.98~GeV/$c^2$.
+A standard argus function is not enough to describe it. We choose the product
+of an argus function and a 3rd order polynomial to model this background shape.
+
+In the fit of the invariant mass of neutron/anti-neutron, the parameters for 
+the background function is fixed by fitting the background shape which is 
+from mDIY MC. The blue line in Fig.~\ref{fig:bkg2012xixipm} is the 
+parametric background shape. The full likelihood function is the sum of 
+background function and signal shape convolved with a Gaussian 
+function. The results of fit is show in Fig~\ref{fig:bkg2012xixipm}. 
+The background have to 
+be subtrack from this fit results. The signal yield is calculated as follow 
+equation:
+\begin{equation}
+	N_{\rm sig} = N_{\rm fit} - N_{\rm sideband} - N_{\rm peaking},
+\end{equation}
+
+where $N_{\rm sideband}$ is the background events estimated by a sideband method 
+which is defined as shown in Fig.~\ref{fig:xi2dmassdata}. $N_{\rm peaking}$
+is the number of events of peaking background channel $J/\psi \to \gamma \eta_c$,
+which is estimated with a exclusive MC simulation.
+
+
+\begin{figure*}[hp]
+	\centering
+		\mbox
+		{
+			\begin{overpic}[width=0.45\textwidth]{Figure/2012xixipmv5/modelbkg.eps}
+			\end{overpic}
+		}
+		\mbox
+		{
+			\begin{overpic}[width=0.45\textwidth]{Figure/2012xixipmv5/massfit.eps}
+			\end{overpic}
+		}
+		\caption{2012 neutron channel}
+		\label{fig:bkg2012xixipm}
+\end{figure*}
+
+
+\begin{figure*}[hp]
+	\centering
+		\mbox
+		{
+			\begin{overpic}[width=0.45\textwidth]{Figure/2012xixipmv5/xi2dmassdata.eps}
+			\end{overpic}
+		}
+		\caption{2012 neutron channel}
+		\label{fig:xi2dmassdata}
+\end{figure*}
+
+
+
+\subsection{Variables comparison}
+The agreement between data and MC of the varibles which are used as 
+event selection requirements to suppress the background are necessary
+to be checked. Figure~\ref{fig:variables2012xixipm} take the neutron 
+channel in 2012 as an example to show that distributions in a order
+1) $\bar{\Lambda}$ decay length, 2) $\bar{\Xi}^+$ decay length, 
+3) $\bar{\Xi}^+$ invariant mass, 4) $\Xi^-$ invariant mass,
+5) $\bar{\Lambda}$ invariant mass, 6) $\cos \theta (\bar{\Xi}^+)$,
+7) $n$ invariant mass, 8) the angle between $\Lambda$ and $\gamma_1$,
+9) the angle between $\Lambda$ and $\gamma_2$, 
+10) $\chi^2$ of secondary vertex fit of $\bar{\Xi}^+$,
+11) $\chi^2$ of secondary vertex fit of $\bar{\Lambda}$,
+12) $\chi^2$ of kinematic fit.
+The distributions of other data samples are very similar to 
+the example and they all have a good agreement between data 
+and corresponding MC simualtion. We will leave the rests in 
+Appendix~\ref{app:variablescomparison}.
+
+
+\begin{figure*}[hp]
+	\centering
+	\foreach \n in {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}{
+		\mbox
+		{
+			\begin{overpic}[width=0.31\textwidth]{Figure/2012xixipmv5/can\n.eps}
+			\end{overpic}
+		}
+		}
+		\caption{2012 neutron channel}
+		\label{fig:variables2012xixipm}
+\end{figure*}
+
+\subsection{Transverse momentum and polar angle}
+The transverse momenta and polar angle of the resonance
+$\Xi$ and $\Lambda$ and the final states proton, neutron,
+charge and neutral pion are also ploted to show that 
+there is no bias. Figure~\ref{fig:pt2012xixipm} and 
+\ref{fig:costheta2012xixipm} present the distributions of
+transverse momenta and polar angle for the neutron channel in 2012, respectively.
+All the particles in decay chain are listed in order 
+1) $\bar{\Xi}^+$, 2) $\Xi^+$, 3) $\Lambda$, 4) $\bar{\Lambda}$,
+5) proton, 6) neutron,
+7) $\pi^+$ from $\bar{\Xi}^+$, 8) $\pi^+$ from $\bar{\Lambda}$,
+9) $\pi^-$ from $\Xi^-$, 10) $\pi^0$, 11) $\gamma_1$, 12) $\gamma_2$.
+It has to be mentioned that we plot the distributions of the momentum 
+of $\pi^0$ and the energy of $\gamma$ considering of the 
+independent freedem of detection. The distributions of the rest 
+data samples can be found in Appendix~\ref{app:transverse}.
+
+
+\begin{figure*}[hp]
+	\centering
+	\foreach \n in {13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24}{
+		\mbox
+		{
+			\begin{overpic}[width=0.31\textwidth]{Figure/2012xixipmv5/can\n.eps}
+			\end{overpic}
+		}
+		}
+		\caption{2012 neutron channel}
+		\label{fig:pt2012xixipm}
+\end{figure*}
+
+
+
+
+\begin{figure*}[hp]
+	\centering
+	\foreach \n in {25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36}{
+		\mbox
+		{
+			\begin{overpic}[width=0.31\textwidth]{Figure/2012xixipmv5/can\n.eps}
+			\end{overpic}
+		}
+		}
+		\caption{2012 neutron channel}
+		\label{fig:costheta2012xixipm}
+\end{figure*}
+
+\subsection{Polarization and entanglement}
+\subsection{Data fit results}
+

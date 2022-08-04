@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt, a4paper]{besnote}
+\usepackage{besphysics}
+\usepackage{besrefblk}
+\usepackage{authblk}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{multirow}
+\usepackage{overpic}
+\usepackage{colortbl}
+
+\usepackage{besphysics}
+\usepackage{besrefblk}
+\usepackage{authblk}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{mathrsfs}
+
+\usepackage{amssymb}
+\usepackage{threeparttable}
+\usepackage{listings}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{overpic}
+\usepackage{colortbl}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{mathrsfs}
+\usepackage{scrextend}
+\usepackage{subcaption}
+\addtokomafont{labelinglabel}{\bfseries}
+
+\usepackage{graphicx}
+%\usepackage{hepunits}
+\usepackage[english]{babel}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{siunitx}
+%\usepackage[driverfallback=dvipdfm]{hyperref}
+\usepackage{hyperref}
+\DeclareSIUnit\GeVovercsq{\GeV/c^2}
+\usepackage{tikz-feynman} 
+\usepackage{mathrsfs}
+\usepackage{feynmp}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{scrextend}
+\usepackage{siunitx}
+\usepackage{overpic}
+\usepackage{amsmath}
+\usepackage{eso-pic,graphicx}
+\usepackage{pgf}
+\usepackage{ragged2e}
+\usepackage{tikz}
+\usepackage{pict2e}
+\usepackage{tikz-3dplot}
+\usepackage{xpicture}
+\usepackage{xcolor}
+\usepackage{xcolor, soul}
+\usepackage[most]{tcolorbox}
+
+%\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=blue,driverfallback=dvipdfm]{hyperref}
+%\usepackage{hyperref}
+%\usepackage[colorlinks,linkcolor=blue,anchorcolor=blue,citecolor=blue,dvipdfm]{hyperref}
+
+\newcommand\T{\rule{0pt}{2.6ex}}       % Top strut
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}} % Bottom strut
+\newcommand{\xim}{\Xi^{-}}
+\newcommand{\xibarp}{\bar{\Xi}^{+}}
+\newcommand{\lam}{\Lambda}
+\newcommand{\lambar}{\bar{\Lambda}}
+\newcommand{\g}{\gamma}
+\newcommand{\CP}{CP}
+%\rennewcommand{\thefootnote}{\arabic{footnote}}
+\newcommand{\F}{h}
+\newcommand{\thetap}{\theta_1}
+
+ \uchyph=0
+ \lefthyphenmin=2
+ \righthyphenmin=2 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for the title
+\title{Measurement of decay parameters $\alpha_0 /\bar{\alpha}_0$ of $\Lambda/\bar{\Lambda}$ in the
+process $J/\psi \to \Xi^- \bar{\Xi}^+$}
+% for the authors
+\author[a,b]{~Liang Liu 1}
+\author[a]{~author 2}
+\author[b]{~author 3}
+\affil[a]{\it Institute of High Energy Physics, CAS}
+\affil[b]{\it affil 1}
+\affil[c]{\it Department of Computer Science and Engineering}
+
+% Add the referee committee here
+\refmember[d]{~Ref1 xx (Chair)}
+\refmember[e]{~Ref2 xx}
+\refmember[f]{~Ref3 xx}
+\refaffil[d]{\it Department of Computer Science and Engineering}
+\refaffil[e]{\it Department of Electrical Engineering}
+\refaffil[f]{\it Latex Univeristy}
+
+% for the draft version
+\besmemoversion{1.0}
+
+% Put the analysis memo docdb ID here
+% Find the ID on the docdb page of the memo
+% For example: DocDB-497 in http://docbes3.ihep.ac.cn/cgi-bin/DocDB/ShowDocument?docid=497
+\besdocdbid{497}
+
+% The analysis hypernews ID information
+% Find the ID in the corresponding hypernews forum 
+% For example: BAM-228 in http://hnbes3.ihep.ac.cn/HyperNews/get/paper228.html
+\besmemoid{228}
+
+% add the abstract of the note here.
+\abstracttext{
+  Based on 567 $\ipb$ of $\ee$ annihilation data collected with the BESIII detector at the
+BEPCII produced at $\sqrt{s}=4.599\gev$,
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\setlength{\baselineskip}{0.7cm}
+%===========================================================================
+%================== Table of contents ======================================
+%===========================================================================
+\tableofcontents
+
+%===========================================================================
+%================== context and BESIII memo ================================
+\include{01Introduction}
+%\include{02Formalism}
+\include{03DataSample}
+\include{04Selection}
+\include{05Background}
+\include{06Parameter}
+\include{07realdata}
+\include{08Systematic}
+\include{10Summary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%=============================================================================
+\clearpage
+
+%\bibliographystyle{besnote}
+%\bibliography{Lambdac4600}
+\include{bibitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\appendix
+\part*{Appendices}
+\addcontentsline{toc}{part}{Appendices}
+\include{Appendix_trueInfo}
+\include{Appendix_BranchFraction}
+\include{Appendix_comparison}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
